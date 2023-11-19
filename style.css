@@ -6,6 +6,7 @@
 body{
     font-family: 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu, sans-serif;
     background-color: #000;
+    color: #fff;
 }
 header{
     display: grid;
@@ -36,7 +37,7 @@ header a.btn{
 header select{
     background: transparent;
     color: #fff;
-    padding: 8px 17px;
+    padding: 8px 21px;
     padding-right: 5px;
     border-radius: 3px;
 }
@@ -48,11 +49,11 @@ header div.select svg{
     color: #fff;
     height: 18px;
     position: absolute;
-    margin-top: 6px;
+    margin-top: 9px;
     margin-left: 3px;
     
 }
-div.splash div.background{
+div.splash{
     position: relative;
 }
 div.splash div.gradient{
@@ -64,3 +65,56 @@ div.splash div.background img{
     max-width: 100%;
     opacity: 0.6;
 }
+div.splash div.content{
+    max-width: 655px;
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    margin-left: -327.5px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+div.splash h1, div.splash h2, div.splash h3{
+    font-weight: normal;
+}
+div.splash h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+div.splash h2{
+    font-size: 1.625rem;
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+div.splash h3{
+    font-size: 1.2rem;
+}
+div.splash form{
+    position: relative;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr max-content;
+}
+div.splash input{
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+div.splash input ~ span{
+    position: absolute;
+    left: 10px;
+    top: 11px;
+    z-index: 3;
+    color: #aaa;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+div.splash input:focus{
+    padding-top: 14px;
+    padding-bottom: 6px;
+}
+div.splash input:focus ~ span{
+    top: 2px;
+    font-size: 0.8rem;
+}   
