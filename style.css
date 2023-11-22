@@ -97,24 +97,62 @@ div.splash form{
     grid-template-columns: 1fr max-content;
 }
 div.splash input{
-    padding: 10px;
+    padding: 15px 10px;
     font-size: 1.2rem;
     width: 100%;
 }
 div.splash input ~ span{
     position: absolute;
-    left: 10px;
-    top: 11px;
+    left: 11px;
+    top: 17px;
     z-index: 3;
     color: #aaa;
     transition: all 0.3s ease;
     pointer-events: none;
 }
 div.splash input:focus{
-    padding-top: 14px;
-    padding-bottom: 6px;
+    padding-top: 19px;
+    padding-bottom: 11px;
 }
 div.splash input:focus ~ span{
-    top: 2px;
+    top: 5px;
     font-size: 0.8rem;
+}
+div.splash button{
+    font-size:1.625rem;
+    padding: 12px  26px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+} 
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 46px;
+    padding: 70px 35px;
+    align-items: center;
+}
+section div.texts h1{
+    font-size: 3.125rem;
+    margin-bottom: 8px;
+}
+section div.texts p{
+    font-size: 1.625rem;
+}
+.media{
+    position: relative;
+}
+.media.s1 img{
+    width: 400px;
+}
+
+.media.s1 video{
+    width: 291px;
+    position: absolute;
+    top: 63px;
+    left: 53px;
+}
+section:nth-child(even) div.texts{
+    order: 2;
 }   
