@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+img{
+    max-width: 100%;
+}
 body{
     font-family: 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu, sans-serif;
     background-color: #000;
@@ -156,3 +159,24 @@ section div.texts p{
 section:nth-child(even) div.texts{
     order: 2;
 }   
+section div.download{
+    border: 2px solid #666;
+    border-radius: 15px;
+    padding: 10px;
+    height: 95px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 280px;
+    left: 50%;
+    margin-left: -140px;
+    background-color: #000;
+    gap: 15px;
+    grid-template-columns: max-content 1fr max-content;
+}
+section div.download img{
+   height: 75px;
+   width: auto;
+}
