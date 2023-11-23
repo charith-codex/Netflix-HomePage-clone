@@ -46,7 +46,12 @@ header select{
 }
 header div.select{
     display: inline-block;
+    color: #fff;
     margin-right: 10px;
+}
+header div.select select{
+    color: #fff;
+    background-color: #000;
 }
 header div.select svg{
     color: #fff;
@@ -133,8 +138,12 @@ section{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 46px;
-    padding: 70px 35px;
+    padding: 70px 90px;
     align-items: center;
+    border-top: 8px solid #222;
+}
+section.last{
+    border-bottom: 8px solid #222;
 }
 section div.texts h1{
     font-size: 3.125rem;
@@ -147,14 +156,15 @@ section div.texts p{
     position: relative;
 }
 .media.s1 img{
-    width: 400px;
+    width: 600px;
 }
 
 .media.s1 video{
-    width: 291px;
+    width: 437px;
     position: absolute;
-    top: 63px;
-    left: 53px;
+    z-index: -5;
+    top: 95px;
+    left: 78px;
 }
 section:nth-child(even) div.texts{
     order: 2;
@@ -168,10 +178,10 @@ section div.download{
     text-align: center;
     align-items: center;
     position: absolute;
-    bottom: 20px;
-    width: 280px;
+    bottom: 30px;
+    width: 340px;
     left: 50%;
-    margin-left: -140px;
+    margin-left: -178px;
     background-color: #000;
     gap: 15px;
     grid-template-columns: max-content 1fr max-content;
@@ -179,4 +189,16 @@ section div.download{
 section div.download img{
    height: 75px;
    width: auto;
+}
+.media.s3 img{
+    width: 550px;
+    position: relative;
+    z-index: 5;
+}
+
+.media.s3 video{
+    width: 345px;
+    position: absolute;
+    top: 36px;
+    left: 95px;
 }
