@@ -195,10 +195,41 @@ section div.download img{
     position: relative;
     z-index: 5;
 }
-
 .media.s3 video{
     width: 345px;
     position: absolute;
     top: 36px;
     left: 95px;
+}
+div.faq{
+    padding: 70px 90px;
+}
+div.faq h1{
+    font-size: 3.125rem;
+    text-align: center;
+}
+div.questions{
+    max-width: 635px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+
+}
+div.question{
+    position: relative;
+    background-color: #303030;
+}
+div.question svg{
+    width: 30px;
+    height: 30px;
+    right: 25px;
+    top: 20px;
+    position: absolute;
+}
+div.question div.header{
+    padding: 20px 30px;
+    border-bottom: 2px solid #000;
+    cursor: pointer;
+}
+div.question div.answer{
+    padding: 20px;
 }
